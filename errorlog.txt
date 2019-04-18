@@ -1,0 +1,95 @@
+test_autodetect_input_format (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmp8ubw1iin C:\Users\Ozge\AppData\Local\Temp\tmph8708tsc
+expected failure
+test_call_with_too_many_files (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmp7mawdz6e C:\Users\Ozge\AppData\Local\Temp\tmp6f6v8l3v C:\Users\Ozge\AppData\Local\Temp\tmp7mawdz6e
+ok
+test_delimiter_in_output (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmp9k45ats0 C:\Users\Ozge\AppData\Local\Temp\tmpyzez0jv9
+ERROR
+test_in_delimiter_and_in_quote (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmp_i2gk4tg C:\Users\Ozge\AppData\Local\Temp\tmp6gwnb7ki --in-delimiter= 
+expected failure
+test_original_file_is_unchanged (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmpogo47_xm C:\Users\Ozge\AppData\Local\Temp\tmpl4nadll_
+ERROR
+test_pipe_file_to_csv_file (__main__.FixCSVTests) ... usage: fix_csv.py [-h] [-i INPUT_DELIMITER] [-q QUOTE_CHAR]
+fix_csv.py: error: unrecognized arguments: C:\Users\Ozge\AppData\Local\Temp\tmpxqhzglgs C:\Users\Ozge\AppData\Local\Temp\tmpca0zu0cz
+ERROR
+
+======================================================================
+ERROR: test_delimiter_in_output (__main__.FixCSVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 59, in test_delimiter_in_output
+    output = run_program('fix_csv.py', args=[old, new])
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 168, in run_program
+    imp.load_source('__main__', path)
+  File "C:\Program Files\Python37\lib\imp.py", line 172, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "fix_csv.py", line 15, in <module>
+    results = parser.parse_args()
+  File "C:\Program Files\Python37\lib\argparse.py", line 1752, in parse_args
+    self.error(msg % ' '.join(argv))
+  File "C:\Program Files\Python37\lib\argparse.py", line 2501, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Program Files\Python37\lib\argparse.py", line 2488, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+======================================================================
+ERROR: test_original_file_is_unchanged (__main__.FixCSVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 71, in test_original_file_is_unchanged
+    run_program('fix_csv.py', args=[old, new])
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 168, in run_program
+    imp.load_source('__main__', path)
+  File "C:\Program Files\Python37\lib\imp.py", line 172, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "fix_csv.py", line 15, in <module>
+    results = parser.parse_args()
+  File "C:\Program Files\Python37\lib\argparse.py", line 1752, in parse_args
+    self.error(msg % ' '.join(argv))
+  File "C:\Program Files\Python37\lib\argparse.py", line 2501, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Program Files\Python37\lib\argparse.py", line 2488, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+======================================================================
+ERROR: test_pipe_file_to_csv_file (__main__.FixCSVTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 33, in test_pipe_file_to_csv_file
+    output = run_program('fix_csv.py', args=[old, new])
+  File "C:\Users\Ozge\Desktop\ktbyers\practise\python_Morsels\test_fix_csv.py", line 168, in run_program
+    imp.load_source('__main__', path)
+  File "C:\Program Files\Python37\lib\imp.py", line 172, in load_source
+    module = _load(spec)
+  File "<frozen importlib._bootstrap>", line 696, in _load
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "fix_csv.py", line 15, in <module>
+    results = parser.parse_args()
+  File "C:\Program Files\Python37\lib\argparse.py", line 1752, in parse_args
+    self.error(msg % ' '.join(argv))
+  File "C:\Program Files\Python37\lib\argparse.py", line 2501, in error
+    self.exit(2, _('%(prog)s: error: %(message)s\n') % args)
+  File "C:\Program Files\Python37\lib\argparse.py", line 2488, in exit
+    _sys.exit(status)
+SystemExit: 2
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.125s
+
+FAILED (errors=3, expected failures=2)
